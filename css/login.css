@@ -1,0 +1,233 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+header {
+	height: 90px;
+	font-size:62.5%;
+	position: relative;
+}
+header div:first-child {
+	position: absolute;
+	top: 20px;
+	left:72px;
+	width: 113px;
+	height: 55px;
+	background:url(../img/login-img/2018-06-15_185928.png) no-repeat;
+}
+#header_tips {
+	position: absolute;
+	top: 23px;
+	left:282px;
+	width: 902px;
+	height: 30px;
+	background: #FEF2F2;
+	font-size:1.2em;
+	border:1px solid #FFB4A8;
+	text-align: center;
+	line-height: 30px;
+}
+#header_proposal {
+	position: absolute;
+	top: 66px;
+	left: 1146px;
+	width: 135px;
+	height: 22px;
+}
+#header_proposal>img{
+	width: 25px;
+	height: 15px;
+	vertical-align: middle;
+}
+#header_proposal>a {
+	color: black;
+	text-decoration:none;
+	font-size:1.2em;
+}
+#header_proposal>a:hover{
+	color: red;
+}
+/*头部内容样式结束*/
+
+/*主体内容样式开始*/
+#middleBox{
+	position: relative;
+	height: 600px;
+	background:url(../img/login-img/TB1HB2ixQyWBuNjy0FpXXassXXa-2500-600.jpg) no-repeat;
+	background-position: -600px;
+}
+#middleBox>form{
+	width:350px;
+	height: 350px;
+	background: #FCE9EF;
+	position: absolute;
+	top: 120px;
+	left:865px;
+	-webkit-user-select:none;
+}
+#middleBox>form h3{
+	margin:35px 25px 0;
+}
+#middleBox>form input{
+	box-sizing: border-box;
+	width: 300px;
+	height: 40px;
+}
+#middleBox>form input[type="text"]{
+	margin:20px 25px 0;
+	padding-left: 45px;
+	border: 1px solid gray;
+	background:url(../img/login-img/头像.png)no-repeat ;
+	background-size: 20px 20px;
+	background-position:10px 9px;
+}
+#middleBox>form input[type="password"]{
+	margin: 20px 25px 0;
+	padding-left: 45px;
+	border: 1px solid gray;
+	background: url(../img/login-img/lock.png) no-repeat;
+	background-size:20px 20px;
+	background-position:10px 9px ;
+}
+#middleBox>form input[type="submit"]{
+	background: #FF4400;
+	margin: 20px 25px 0;
+	color:white;
+	font-size:16px;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#middleBox>form input[type="submit"]:hover{
+	background:#F52B00;
+}
+#middleBox #error{
+	position: absolute;
+	top: 30px;
+	left: 25px;
+	width: 300px;
+	height: 30px;
+	box-sizing: border-box;
+	background-color: #FEF2F2;
+	border: 1px solid red;
+	background-image: url(../img/login-img/禁止.png);
+	background-repeat:no-repeat ;
+	background-size:15px 15px;
+	background-position:10px 7px;
+	color: #6C6C6C;
+	font-size: 12px;
+	padding-left: 45px;
+	line-height: 30px;
+}
+#wechat{
+	margin: 25px 25px 0;
+}
+#wechat>a{
+	display: inline-block;
+	color: #6C6C6C;
+	font-size:12px;
+	text-decoration:none;
+}
+#wechat>a:hover{
+	color: red;
+}
+#wechat>a:first-of-type{
+	background: url(../img/login-img/微博图标.png) no-repeat 0 1px;
+	background-size:15px 15px;
+	padding-left: 17px;
+}
+#wechat>a:last-of-type{
+	margin-left: 20px;
+	background: url(../img/login-img/支付宝图标.png) no-repeat 0 1px;
+	background-size:15px 15px;
+	padding-left: 17px;
+}
+#otherLink{
+	margin-left:130px;
+	margin-top: 20px;
+}
+#otherLink>a{
+	display: inline-block;
+	margin-left: 10px;
+	color: #6C6C6C;
+	font-size:12px;
+	text-decoration:none;
+}
+#otherLink>a:hover{
+	color: red;
+}
+.hide{
+	display: none;
+}
+/*中间登录框样式结束*/
+
+/*底部企业合作链接样式开始*/
+footer{
+	height: 230px;
+	overflow: hidden;
+}
+footer div:first-child{
+	width: 1200px;
+	height: 40px;
+	margin: 63px auto 0;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+}
+footer div:first-child a{
+	display: inline-block;
+	text-decoration:none;
+	color: #6C6C6C;
+	font-size:12px;
+	margin-top: 12px;
+	padding: 0 8px;
+	border-right:1px solid #DDD;
+}
+footer div:first-child a:hover{
+	color: red;
+	cursor: pointer;
+}
+footer div:first-child a:first-child{
+	padding-left: 0;
+}
+footer div:first-child a:last-child{
+	border: none;
+}
+footer>ul:first-of-type{
+	width:862px;
+	height: 15px;
+	margin:10px 65px 0;
+}
+footer>ul:first-of-type li{
+	float: left;
+	margin-left: 10px;
+	font-size:12px;
+	cursor: pointer;
+	color: #6C6C6C;
+}
+footer>ul:first-of-type li:last-of-type{
+	margin-left: 40px;
+}
+footer>ul:last-of-type{
+	width:800px;
+	height: 15px;
+	margin:10px 65px 0;
+}
+footer>ul:last-of-type li{
+	float: left;
+	padding:0 10px;
+	font-size:12px;
+	color: #6C6C6C;
+	border-right: 1px solid #DDD;
+}
+footer>ul:last-of-type li:last-of-type{
+	border: none;
+}
+#lit_logo{
+	display: block;
+	margin: 15px 73px;
+	width: 36px;
+	height: 36px;
+	background: url(../img/login-img/wj.gif);
+}

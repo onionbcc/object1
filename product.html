@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>详情页面</title>
+		<link rel="stylesheet" href="css/product.css" />
+	</head>
+	<body>
+		<!--头部内容开始-->
+		<header>
+			<!--头部的登录列表-->
+			<ul>
+				<li><a href="">天猫首页</a></li>
+				<li><a>喵，欢迎来天猫</a></li>
+				<li><a href="">请登录</a></li>
+				<li><a href="">免费注册</a></li>
+			</ul>
+			<ul>
+				<li id="myTaobao">
+					<i></i>
+					<a href="">我的淘宝</a>
+					<ul>
+						<li><a href="">已买到的宝贝</a></li>
+						<li><a href="">已卖出的宝贝</a></li>
+					</ul>
+				</li>
+				<li id="shopcar">
+					<a href="">购物车0件</a>
+				</li>
+				<li id="shoucang">
+					<i></i>
+					<a href="">收藏夹</a>
+					<ul>
+						<li><a href="">收藏的宝贝</a></li>
+						<li><a href="">收藏的店铺</a></li>	
+					</ul>
+				</li>
+				<li id="phoneTaobao">
+					<a href="">手机版</a>
+					<!--扫一扫手机版-->
+					<div>
+						<img src="//img.alicdn.com/tfs/TB1MDxDRpXXXXXUXFXXXXXXXXXX-175-215.png">
+					</div>
+				</li>
+				<li id="taobaoWeb">
+					<a href="">淘宝网</a>
+				</li>
+				<li id="behideMe">
+					<i></i>
+					<a href="">商家支持</a>
+					<div>
+						<h4>商家：</h4>
+						<ul class="beMe_outul">
+							<li>
+								<ul class="beMe_innerul">
+									<li><a href="">商家中心</a></li>
+									<li><a href="">商家入驻</a></li>
+									<li><a href="">商家品控</a></li>
+									<li><a href="">天猫智库</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="beMe_innerul">
+									<li><a href="">天猫规则</a></li>
+									<li><a href="">运营服务</a></li>
+									<li><a href="">商家工具</a></li>
+									<li><a href="">喵言喵语</a></li>
+								</ul>
+							</li>
+						</ul>
+						<h4>帮助中心：</h4>
+						<ul class="beMe_outul">
+							<li><a href="">帮助中心</a></li>
+							<li><a href="">问商友</a></li>
+						</ul>
+					</div>
+				</li>	
+				<li id="webNav">
+					<i></i>
+					<a href="">网站导航</a>
+					<div>
+						<div class="web_proBox">
+							<h4>热点推荐  Hot</h4>
+							<ul>              
+								<li><a href="">天猫超市</a></li>
+								<li><a href="">内衣新品</a></li>
+								<li><a href="">吃乐会</a></li>
+							</ul>
+							<ul>
+								<li><a href="">喵鲜生</a></li>
+								<li><a href="">试美妆</a></li>
+								<li><a href="">企业采购</a></li>
+							</ul>
+							<ul>
+								<li><a href="">科技新品</a></li>
+								<li><a href="">运动新品</a></li>
+								<li><a href="">会员积分</a></li>
+							</ul>
+							<ul>
+								<li><a href="">女装新品</a></li>
+								<li><a href="">时尚先生</a></li>
+								<li><a href="">天猫国际</a></li>
+							</ul>
+							<ul>
+								<li><a href="">酷玩街</a></li>
+								<li><a href="">精明妈咪</a></li>
+								<li><a href="">品质频道</a></li>
+							</ul>
+						</div>
+						<div class="web_proBox">
+							<h4>行业市场  Market</h4>
+							<ul>               
+								<li><a href="">美妆</a></li>
+								<li><a href="">男鞋</a></li>
+								<li><a href="">家装</a></li>
+							</ul>
+							<ul>              
+								<li><a href="">电器</a></li>
+								<li><a href="">女装</a></li>
+								<li><a href="">男装</a></li>
+							</ul>
+							<ul>              
+								<li><a href="">女鞋</a></li>
+								<li><a href="">内衣</a></li>
+								<li><a href="">箱包</a></li>
+							</ul>
+							<ul>              
+								<li><a href="">运动</a></li>
+								<li><a href="">母婴</a></li>
+								<li><a href="">医药</a></li>
+							</ul>
+							<ul>              
+								<li><a href="">食品</a></li>
+								<li><a href="">配饰</a></li>
+								<li><a href="">汽车</a></li>
+							</ul>
+						</div>
+						<div class="web_proBox">
+							<h4>服务指南  Help</h4>
+							<ul>                  
+								<li><a href="">帮助中心</a></li>
+								<li><a href="">特色服务</a></li>
+							</ul>
+							<ul>              
+								<li><a href="">品质保障</a></li>
+								<li><a href="">7天退换货</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>	
+			</ul>
+		</header>
+		<!--头部内容结束-->
+		<!--天猫搜索框内容开始-->
+		<div id="cat_search">
+			<!--天猫logo-->
+			<a href="#" title="天猫Tmall.com">
+				<img src="//img.alicdn.com/tfs/TB11ojWRXXXXXafaFXXXXXXXXXX-190-27.png"> 
+			</a>
+			<form action="" method="post">
+				<input type="text" placeholder="搜索  天猫  商品/品牌/店铺" autofocus="true">
+				<input type="submit" name="搜天猫" value="搜天猫">
+				<input type="submit" name="搜本店" value="搜本店">
+			</form>
+			<ul>
+				<li><a href="">衬衫女</a></li>
+				<li><a href="">纯棉衬衫女长袖</a></li>
+		     	<li><a href="">短袖衬衫女</a></li>
+				<li><a href="">衬衫女长袖</a></li>
+				<li><a href="">纯棉衬衫女短袖</a></li>
+				<li><a href="">衬衣女长袖</a></li>
+			</ul>
+		</div>
+		<!--天猫搜索框内容结束-->
+		<!--初影店铺商品导航列表-->
+		<nav>
+			<!--店铺标题-->
+			<div>
+				<a href="#">
+					<img src="img/product-img/2018-06-21_215312.png">
+				</a>
+			</div>
+			<!--收藏关注-->
+			<div>
+				<div class="focusUs">
+					<a href="">收藏</a>
+				</div>
+				<div class="focusUs">
+					<a href="">关注</a>
+				</div>
+			</div>
+			<div>
+				<ul>
+					<li>
+						<a href="">本店所有商品</a>
+						<ul class="hide_list">
+							<li><a href="">所有宝贝</a></li>
+							<li><a href="">6月27上新</a></li>
+							<li><a href="">6月20上新</a></li>
+							<li><a href="">6月10上新</a></li>
+							<li><a href="">5月27上新</a></li>
+							<li><a href="">5月20上新</a></li>
+							<li></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">首页</a>
+					</li>
+					<li>
+						<a href="">衬衫</a>
+					</li>
+					<li>
+						<a href="">雪纺蕾丝打底衫</a>
+					</li>
+					<li>
+						<a href="">裙装</a>
+					</li>
+					<li>
+						<a href="">裤子</a>
+					</li>
+					<li>
+						<a href="">时尚套装</a>
+					</li>
+					<li>
+						<a href="">清仓处理</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<!--放大镜容器内容开始-->	
+		<!--放大镜左侧的容器-->
+		<div class="magnifying_small">
+			<!--放大镜-->
+			<div id="glass"></div>
+			<img src="img/product-img/02_small.jpg">
+		</div>
+			<!--放大镜右侧的容器-->
+		<div class="magnifying_big">
+			<img src="img/product-img/02_big.jpg">
+		</div>
+		<!--具体物品的小图片-->
+		<ul id="magnifying_picList">
+			<li><img src="img/product-img/02_big.jpg"></li>
+			<li><img src="img/product-img/03_big.jpg"></li>
+			<li><img src="img/product-img/04_big.jpg"></li>
+			<li><img src="img/product-img/05_big.png"></li>
+		</ul>
+		<!--放大镜容器内容结束-->
+		<!--衬衣的具体信息开始-->
+		<div id="shirt_info">
+			<h1>条纹衬衫女短袖夏季新款宽松显瘦圆领泡泡袖民族风刺绣花纯棉衬衣</h1>
+			<p>纯棉刺绣宽松显瘦</p>
+		    <!--价钱面板-->
+		    <div id="price_panel">
+		    	<div>
+		    		<img src="//img.alicdn.com/tps/TB1okcBKVXXXXbBXVXXXXXXXXXX-116-32.png" alt="天猫购物券" />
+		    		<p>全天猫实物商品通用</p>
+		    		<a href="">去刮券</a>
+		    	</div>
+		    	<!--原价-->
+		    	<div>
+		    		<span class="prcie_title">价格</span><span>¥</span><span>171.00</span>
+		    	</div>
+		    	<!--现价-->
+		    	<div>
+		    		<span class="prcie_title">促销价</span><span>¥</span><span>89.90</span><div>夏季新品</div>
+		    	</div>
+		    	<hr>
+		    	<div>
+		    		<span>想￥89.00拿下？</span>
+		    		<span>手机天猫购买更便宜</span>
+		    		<img src="//gcodex.alicdn.com/qrcode.do?biz_code=tmallpc&content=http%3A%2F%2Fm.laiwang.com%2Fmarket%2Flaiwang%2Ftmall%2Fapp-download.php%3Ftype%3Ddetail%26iframe%3D1%26key%3D556149220651%26src%3Dpcdetail%26mmstat%3Ddetail_pcfocus%26biz%3Dtmall&size=175&margin=0&logo_url=http%3A%2F%2Fimg.alicdn.com%2Ftfs%2FTB1xrwucwMPMeJjy1XcXXXpppXa-198-198.png&channel_id=2">
+		    		<div class="hide_erweima">
+		    			<img src="//gcodex.alicdn.com/qrcode.do?biz_code=tmallpc&content=http%3A%2F%2Fm.laiwang.com%2Fmarket%2Flaiwang%2Ftmall%2Fapp-download.php%3Ftype%3Ddetail%26iframe%3D1%26key%3D556149220651%26src%3Dpcdetail%26mmstat%3Ddetail_pcfocus%26biz%3Dtmall&size=175&margin=0&logo_url=http%3A%2F%2Fimg.alicdn.com%2Ftfs%2FTB1xrwucwMPMeJjy1XcXXXpppXa-198-198.png&channel_id=2">
+		    		</div>
+		    	</div>
+		    </div>
+		    <!--运费-->
+		    <div class="yunfei">
+		    	<span class="prcie_title">运费</span>
+		    	<span>上海  至</span><span>&nbsp;北京</span><span>&nbsp;快递 0.00</span>
+		    </div>
+		    <!--销量-->
+		    <ul class="xiaoliang">
+		    	<li><span>月销量</span><span style="color:#FF1F4E">289</span></li>
+		    	<li><span>累计评价</span><span style="color:#FF1F4E">308</span></li>
+		    	<li><span>送天猫积分</span><span style="color:#228800">44</span></li>
+		    </ul>
+		    <!--尺码-->
+		    <div class="chima">
+		    	<span class="prcie_title">尺码</span>
+		    	<div>S</div>
+		    	<div>M</div>
+		    	<div>X</div>
+		    	<div>XL</div>
+		    	<div>XXL</div>
+		    </div>
+		    <!--颜色分类-->
+		    <div class="colorSelect">
+		    	<span class="prcie_title">颜色分类</span>
+		    	<a title="蓝条纹短袖"><img src="img/product-img/02_big.jpg"></a>
+		    	<a title="蓝条纹长袖"><img src="img/product-img/05_big.png"></a>	
+		    </div>
+		    <!--数量-->
+		    <div class="shirtNum">
+		    	<span class="prcie_title">数量</span>
+		    	<span>1</span>
+		    	<span class="sign">
+		    		<span>+</span>
+		    		<span>-</span>
+		    	</span>
+		    </div>
+		    <!--购买按钮-->
+		    <button type="submit" name="buy">立即购买</button>
+		    <button type="submit" name="addTo">加入购物车</button>
+		</div>
+		<!--商品的具体信息结束-->
+		
+		<!--右侧黑框导航栏内容开始-->
+		<div id="sidebar">
+			<!--会员权益-->
+			<div id="member" class="animation">
+				<div class="hide_bar">会员权益</div>			
+			</div>
+			<!--购物车-->
+			<div id="my_shopcar">
+				购物车
+			</div>
+			<!--我的资产-->
+			<div id="my_property" class="animation">
+				<div class="hide_bar">我的资产</div>
+			</div>
+			<!--我的收藏-->
+			<div id="my_collect" class="animation">
+				<div class="hide_bar">我的收藏</div>
+			</div>
+			<!--我看过的-->
+			<div id="my_history" class="animation">
+				<div class="hide_bar">我看过的</div>
+			</div>
+			<!--用户反馈-->
+			<div id="my_fadeback" class="animation">
+				<div class="hide_bar">用户反馈</div>
+			</div>
+		</div>
+		<!--右侧黑框导航栏内容结束-->
+		
+		<!--看了又看-->
+		<div id="overAndover">
+			<h4>看了又看</h4>
+			<div>
+				<a href="#">
+					<img src="//img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/TB1hoMuXE6FK1Jjy0FoXXXHqVXa_!!0-item_pic.jpg_160x160q90.jpg">
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="//img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/TB1O4VKhcyYBuNkSnfoXXcWgVXa_!!0-item_pic.jpg_160x160q90.jpg">
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="//img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/TB1GCd_SpXXXXajaFXXXXXXXXXX_!!0-item_pic.jpg_160x160q90.jpg">
+				</a>
+			</div>
+		</div>
+		
+		<!--产品详情-->
+		<div id="details">
+			<h3>商品详情</h3>
+			<!--产品文字介绍-->
+			<div class="wordIntro">
+				<span>品牌名称：Cuooyino/初影</span><br>
+				<span>产品参数</span>
+				<ul>
+					<li>
+						<ul>
+							<li>材质成分: 棉100%</li>
+							<li>服装版型: 直筒</li>
+							<li>衣长: 常规款</li>
+							<li>领型: 圆领</li>
+							<li>服装款式细节: 荷叶边 绣花</li>
+							<li>年份季节: 2018年春季</li>		
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li>销售渠道类型: 纯电商(只在线上销售)</li>
+							<li>风格: 通勤</li>
+							<li>袖长: 五分袖</li>
+							<li>衣门襟: 单排多扣</li>
+							<li>品牌: Cuooyino/初影</li>
+							<li>颜色分类: 蓝条纹短袖 蓝条纹长袖</li>		
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li>货号: 7121</li>
+							<li>通勤: 文艺</li>
+							<li>袖型: 泡泡袖</li>
+							<li>图案: 条纹</li>
+							<li>适用年龄: 25-29周岁</li>
+							<li>尺码: S M L XL XXL</li>		
+						</ul>
+					</li>
+				</ul>
+			</div>
+		
+			<!--宝贝推荐-->
+			<div id="recommend">
+				<h3>宝贝推荐</h3>
+				<div class="otherShirt">
+					<div>
+						<img src="//img.alicdn.com/bao/uploaded/TB1NqSBOXXXXXbzXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg">
+					</div>
+					<p>夏装2018新款纯棉白衬衫女长袖修身木耳立领文艺清新打底衫衬衣</p>
+					<!--价钱-->
+					<div>
+						<i class="symbol">一口价</i><span class="money">¥</span><span class="moneyNum">89.00</span><span class="oraginMoney">¥169.00</span>
+					</div>
+				</div>
+				<div class="otherShirt">
+					<div>
+						<img src="//img.alicdn.com/bao/uploaded/TB11qROXRjTBKNjSZFwXXcG4XXa_!!0-item_pic.jpg_240x240.jpg">
+					</div>
+					<p>夏装2018新款纯棉白衬衫女长袖修身韩范时尚百搭职业装衬衣打底衫</p>
+					<!--价钱-->
+					<div>
+						<i class="symbol">一口价</i><span class="money">¥</span><span class="moneyNum">89.00</span><span class="oraginMoney">¥246.00</span>
+					</div>
+				</div>
+				<div class="otherShirt">
+					<div>
+						<img src="//img.alicdn.com/bao/uploaded/TB1RB0.OXXXXXXpapXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg">
+					</div>
+					<p>白衬衫女长袖2018夏季新款蕾丝花边纯棉打底衫修身气质淑女棉衬衣</p>
+					<!--价钱-->
+					<div>
+						<i class="symbol">一口价</i><span class="money">¥</span><span class="moneyNum">89.00</span><span class="oraginMoney">¥206.00</span>
+					</div>
+				</div>
+				<div class="otherShirt">
+					<div>
+						<img src="//img.alicdn.com/bao/uploaded/TB1HTd3b6ihSKJjy0FeXXbJtpXa_!!0-item_pic.jpg_240x240.jpg">
+					</div>
+					<p>白衬衫女夏装2018新款刺绣花鸟民族风宽松显瘦小清新短袖纯棉衬衣</p>
+					<!--价钱-->
+					<div>
+						<i class="symbol">一口价</i><span class="money">¥</span><span class="moneyNum">89.00</span><span class="oraginMoney">¥190.00</span>
+					</div>
+				</div>
+				<div class="otherShirt">
+					<div>
+						<img src="//img.alicdn.com/bao/uploaded/TB1cBOKOXXXXXaMXXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg">
+					</div>
+					<p>白衬衫女长袖2018夏装新款刺绣花镂空上衣田园甜美气质纯棉衬衣</p>
+					<!--价钱-->
+					<div>
+						<i class="symbol">一口价</i><span class="money">¥</span><span class="moneyNum">99.00</span><span class="oraginMoney">¥190.00</span>
+					</div>
+				</div>
+				<div class="otherShirt">
+					<div>
+						<img src="//img.alicdn.com/bao/uploaded/TB16MBidDAKL1JjSZFCXXXFspXa_!!0-item_pic.jpg_240x240.jpg">
+					</div>
+					<p>民族风刺绣花衬衫女长袖春装新款甜美宽松显瘦气质淑女纯棉白衬衣</p>
+					<!--价钱-->
+					<div>
+						<i class="symbol">一口价</i><span class="money">¥</span><span class="moneyNum">99.00</span><span class="oraginMoney">¥190.00</span>
+					</div>
+				</div>
+				<div class="otherShirt">
+					<div>
+						<img src="//img.alicdn.com/bao/uploaded/TB1tVeAXDXYBeNkHFrdXXciuVXa_!!0-item_pic.jpg_240x240.jpg">
+					</div>
+					<p>条纹连衣裙女中长款系带收腰刺绣花民族风衬衫裙夏装2018新款裙子</p>
+					<!--价钱-->
+					<div>
+						<i class="symbol">一口价</i><span class="money">¥</span><span class="moneyNum">99.00</span><span class="oraginMoney">¥190.00</span>
+					</div>
+				</div>
+				<div class="otherShirt">
+					<div>
+						<img src="//img.alicdn.com/bao/uploaded/TB1hmI5SpXXXXa8aXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg">
+					</div>
+					<p>条纹衬衫女短袖夏季新款宽松显瘦圆领泡泡袖民族风刺绣花纯棉衬衣</p>
+					<!--价钱-->
+					<div>
+						<i class="symbol">一口价</i><span class="money">¥</span><span class="moneyNum">99.00</span><span class="oraginMoney">¥190.00</span>
+					</div>
+				</div>
+				<div class="otherShirt">
+					<div>
+						<img src="//img.alicdn.com/bao/uploaded/TB1xgu9X8xRMKJjy0FdXXaifFXa_!!0-item_pic.jpg_240x240.jpg">
+					</div>
+					<p>蓝色细条纹衬衫女长袖中长款2018春季新款拼接宽松显瘦chic衬衣</p>
+					<!--价钱-->
+					<div>
+						<i class="symbol">一口价</i><span class="money">¥</span><span class="moneyNum">99.00</span><span class="oraginMoney">¥190.00</span>
+					</div>
+				</div>
+				<div class="otherShirt">
+					<div>
+						<img src="//img.alicdn.com/bao/uploaded/TB1WnhkgNsIL1JjSZFqXXceCpXa_!!0-item_pic.jpg_240x240.jpg">
+					</div>
+					<p>民族风绣花衬衫女长袖中长款春装2018新款纯棉时尚蓝色条纹衬衣</p>
+					<!--价钱-->
+					<div>
+						<i class="symbol">一口价</i><span class="money">¥</span><span class="moneyNum">99.00</span><span class="oraginMoney">¥190.00</span>
+					</div>
+				</div>
+				<div class="otherShirt">
+					<div>
+						<img src="//img.alicdn.com/bao/uploaded/TB1xnZvSXXXXXaUXXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg">
+					</div>
+					<p>白衬衫女七分袖夏季新款蕾丝花边镂空蝴蝶结系带修身显瘦纯棉衬衣</p>
+					<!--价钱-->
+					<div>
+						<i class="symbol">一口价</i><span class="money">¥</span><span class="moneyNum">99.00</span><span class="oraginMoney">¥190.00</span>
+					</div>
+				</div>
+				<div class="otherShirt">
+					<div>
+						<img src="//img.alicdn.com/bao/uploaded/TB149TJjfDH8KJjy1XcXXcpdXXa_!!0-item_pic.jpg_240x240.jpg">
+					</div>
+					<p>春装针织半身裙女中长款蕾丝打底裙高腰两面穿修身包臀开叉一步裙</p>
+					<!--价钱-->
+					<div>
+						<i class="symbol">一口价</i><span class="money">¥</span><span class="moneyNum">99.00</span><span class="oraginMoney">¥190.00</span>
+					</div>
+				</div>
+				<div class="pubu">
+					<h3>图片展示</h3>
+					<!---->
+					<ul>
+					</ul>
+					<ul>
+					</ul>
+					<ul>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="js/product.js" ></script>
+	</body>
+</html>

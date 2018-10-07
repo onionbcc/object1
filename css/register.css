@@ -1,0 +1,538 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+header {
+	height: 33px;
+	font-size: 62.5%;
+	background: #F5F5F5;
+	position: relative;
+}
+
+#header_login {
+	position: absolute;
+	left: 160px;
+	top: 8px;
+}
+
+#header_login>a {
+	font-size: 1.2em;
+	color: black;
+	padding: 0 8px;
+}
+#header_login>a:first-of-type {
+	color: red;
+}
+
+header>ul {
+	position: absolute;
+	left: 582px;
+	height: 33px;
+}
+
+header>ul>li {
+	float: left;
+	padding: 8px 15px;
+}
+
+header>ul>li:first-of-type a {
+	color: red;
+}
+
+#myTaobao {
+	position: relative;
+	box-sizing: border-box;
+	width: 85px;
+	height: inherit;
+	background: url(../img/register-img/箭头.png) no-repeat 68px 11px;
+	background-size: 10px 10px;
+}
+
+#myTaobao:hover {
+	background-color: white;
+	color: red;
+}
+
+#myTaobao:hover ul {
+	display: block;
+}
+
+#myTaobao>ul {
+	display: none;
+	width: 85px;
+	position: absolute;
+	top: 33px;
+	left: 0px;
+	z-index: 1;
+	border: 1px solid #ddd;
+	overflow: hidden;
+}
+
+#myTaobao>ul>li {
+	width: inherit;
+	padding: 5px 0px;
+}
+
+#myTaobao>ul>li:hover {
+	background: #F5F5F5;
+}
+
+#myTaobao>ul li>a {
+	color: black;
+	padding-left: 3px;
+}
+
+#shopcar {
+	box-sizing: border-box;
+	height: inherit;
+	padding-left: 22px;
+	background: url(../img/register-img/购物车.png)no-repeat 7px 12px, url(../img/register-img/箭头.png) no-repeat 60px 11px;
+	background-size: 10px 10px;
+}
+
+#shopcar:hover {
+	color: red;
+}
+
+#favorite {
+	position: relative;
+	width: 86px;
+	box-sizing: border-box;
+	padding-left: 22px;
+	background: url(../img/register-img/收藏.png) no-repeat 7px 12px, url(../img/register-img/箭头.png) no-repeat 60px 12px;
+	background-size: 10px 10px;
+}
+
+#favorite:hover {
+	color: red;
+	background-color: white;
+}
+
+#favorite:hover ul {
+	display: block;
+}
+
+#favorite>ul {
+	display: none;
+	width: 86px;
+	position: absolute;
+	top: 33px;
+	left: 0;
+	z-index: 1;
+	border: 1px solid #ddd;
+}
+
+#favorite>ul>li {
+	width: inherit;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#favorite>ul>li>a {
+	color: black;
+}
+
+#favorite>ul>li:hover {
+	background: #F5F5F5;
+}
+
+header>ul>li:nth-of-type(5):hover {
+	color: red;
+	cursor: pointer;
+}
+
+#seller_center {
+	position: relative;
+	width: 55px;
+	background: url(../img/register-img/箭头.png) no-repeat 70px 11px;
+	background-size: 10px 10px;
+}
+
+#seller_center:hover {
+	background-color: white;
+	color: red;
+	cursor: pointer;
+}
+
+#seller_center:hover ul {
+	display: block;
+}
+
+#seller_center>ul {
+	display: none;
+	width: 93px;
+	position: absolute;
+	top: 33px;
+	left: 0;
+	z-index: 1;
+	border: 1px solid #DDD;
+}
+
+#seller_center>ul>li {
+	padding: 5px 10px;
+}
+
+#seller_center>ul>li:hover {
+	background: #F5F5F5;
+}
+
+#call_center {
+	position: relative;
+	width: 55px;
+	background: url(../img/register-img/箭头.png) no-repeat 68px 10px;
+	background-size: 10px 10px;
+}
+
+#call_center:hover {
+	background-color: white;
+	color: red;
+	cursor: pointer;
+}
+
+#call_center:hover ul {
+	display: block;
+}
+
+#call_center>ul {
+	display: none;
+	width: 80px;
+	position: absolute;
+	top: 33px;
+	left: 0;
+	z-index: 1;
+	border: 1px solid #DDD;
+}
+
+#call_center>ul>li {
+	padding: 5px 10px;
+}
+
+#call_center>ul>li:hover {
+	background: #F5F5F5;
+}
+
+header>ul li.firstLi {
+	margin-top: 10px;
+}
+
+header>ul li.lastLi {
+	margin-bottom: 10px;
+}
+
+#web_nav {
+	position: relative;
+	width: 65px;
+	background: url(../img/register-img/汉堡包.png) no-repeat 10px 12px, url(../img/register-img/箭头.png) no-repeat 80px 12px;
+	background-size: 12px 10px;
+}
+
+#web_nav>span {
+	margin-left: 10px;
+}
+
+#web_nav>span:hover {
+	color: red;
+}
+
+#web_nav:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
+#web_nav:hover #product_box {
+	display: block;
+}
+
+#web_nav #product_box {
+	width: 1098px;
+	height: 250px;
+	border: 1px solid #DDD;
+	position: absolute;
+	left: -1005px;
+	top: 33px;
+	z-index: 999;
+	background: white;
+	display: none;
+}
+
+#web_nav #product_box div.product_type {
+	position: relative;
+	float: left;
+	width: 273.4px;
+	height: 220px;
+	margin-top: 20px;
+	border-right: 1px solid #F5F5F5;
+}
+
+#product_box .product_type>h2 {
+	position: absolute;
+	top: 0px;
+	left: 20px;
+}
+
+#product_box .product_type>ul {
+	float: left;
+	margin-left: 25px;
+	margin-top: 30px;
+}
+
+#product_box .product_type>ul li a {
+	display: inline-block;
+	font-size: 12px;
+	padding: 5px 5px;
+}
+
+#product_box .product_type:first-of-type>ul li:hover a {
+	color: white;
+	background: #FF5500;
+}
+
+#product_box .product_type:nth-of-type(2)>ul li:hover a {
+	color: white;
+	background: #A0B959;
+}
+
+#product_box .product_type:nth-of-type(3)>ul li:hover a {
+	color: white;
+	background: #E891C8;
+}
+
+#product_box .product_type:nth-of-type(4)>ul li:hover a {
+	color: white;
+	background: #5DACE0;
+}
+
+
+/*头部样式结束*/
+
+
+/*主体内容样式开始*/
+
+#main_content {
+	height: 400px;
+}
+
+#clickToReg {
+	position: absolute;
+	top: 43px;
+	left: 165px;
+	width: 190px;
+	height: 55px;
+}
+
+#shade {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #777;
+	opacity: 0.6;
+	z-index: 2;
+	display: none;
+}
+
+#main_content>form {
+	position: absolute;
+	top: 200px;
+	left: 550px;
+	width: 400px;
+	height: 200px;
+	z-index: 3;
+	background: white;
+	border: 1px solid darkgray;
+	display: none;
+	cursor: move;
+}
+
+#main_content>form>span:nth-of-type(1) {
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+
+#main_content>form select {
+	width: 146px;
+	height: 33px;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: 24.6px;
+}
+
+#main_content>form select>option>span {
+	margin-left: 10px;
+	color: red;
+}
+
+#main_content>form input[type="text"] {
+	width: 146px;
+	height: 30px;
+}
+#main_content>form>span:nth-of-type(2){
+	float: left;
+	margin:25px 32px;
+	font-size: 12px;
+}
+#main_content>form button{
+	width:165px;
+	height: 32px;
+	margin:20px -15px;
+	border: none;
+	border-radius: 5px;
+	background: #F73500;
+	color: white;
+	font-size:16px;
+	font-weight: bold;
+}
+#box {
+	float: left;
+	width: 270px;
+	height: 32px;
+	position: relative;
+	margin-left: -17px;
+	margin-top: 20px;
+	background: #e8e8e8;
+}
+
+#button {
+	width: 32px;
+	height: 31px;
+	border: 1px solid #ccc;
+	background: #fff;
+	cursor: move;
+	font-size: 18px;
+	color: #666;
+	line-height: 31px;
+	text-align: center;
+	-webkit-user-select: none;
+	position: absolute;
+	z-index: 2;
+}
+
+#cont {
+	position: absolute;
+	width: 150px;
+	margin: 8px 80px;
+	font-size:12px;
+}
+
+#bgcolor {
+	position: absolute;
+	width: 0px;
+	height: 32px;
+	background: #7AC23C;
+}
+#close{
+	width: 20px;
+	height: 20px;
+	background: url(../img/register-img/close.png) no-repeat;
+	background-size:20px 20px ;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+#error{
+	position: absolute;
+	top: 10px;
+	left: 100px;
+	width: 200px;
+	height: 20px;
+	display: none;
+	border: 1px solid red;
+	background: url(../img/register-img/错误.png)no-repeat;
+	background-size:15px 15px;
+	background-position: 5px 2.5px;
+	font-size:12px;
+	padding-left: 30px;
+	line-height: 20px;
+}
+#hint{
+	width:148px;
+	height: 64px;
+	background: url(../img/register-img/tishi.png) no-repeat;
+	font-size:20px;
+	color: red;
+}
+/*主题样式结束*/
+
+
+/*底部企业合作链接样式开始*/
+
+footer {
+	height: 140px;
+	/*overflow: hidden;*/
+}
+
+footer div:first-child {
+	width: 1070px;
+	height: 40px;
+	margin: 63px auto 0;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+}
+
+footer div:first-child a {
+	display: inline-block;
+	text-decoration: none;
+	color: #6C6C6C;
+	font-size: 12px;
+	margin-top: 12px;
+	padding: 0 8px;
+	border-right: 1px solid #DDD;
+}
+
+footer div:first-child a:hover {
+	color: red;
+	cursor: pointer;
+}
+
+footer div:first-child a:first-child {
+	padding-left: 0;
+}
+
+footer div:first-child a:last-child {
+	border: none;
+}
+
+footer>ul:first-of-type {
+	width: 862px;
+	height: 15px;
+	margin: 10px 130px 0;
+}
+
+footer>ul:first-of-type li {
+	float: left;
+	margin-left: 10px;
+	font-size: 12px;
+	cursor: pointer;
+	color: #6C6C6C;
+}
+
+footer>ul:first-of-type li:last-of-type {
+	margin-left: 40px;
+}
+
+footer>ul:last-of-type {
+	width: 800px;
+	height: 15px;
+	margin: 10px 130px 0;
+}
+
+footer>ul:last-of-type li {
+	float: left;
+	padding: 0 10px;
+	font-size: 12px;
+	color: #6C6C6C;
+	border-right: 1px solid #DDD;
+}
+
+footer>ul:last-of-type li:last-of-type {
+	border: none;
+}
